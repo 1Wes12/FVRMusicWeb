@@ -1,0 +1,206 @@
+/*body is classified for the main page*/
+            body {
+                background-color: black;
+                color: white;
+                overflow-x: hidden;
+                font-family: "Orbitron", sans-serif;
+        }
+        
+        /*right I classified so I can align certain text to the right of the screen*/
+            .right {
+                text-align: right;
+                vertical-align: middle;
+        }
+        
+        /*center I classified so I can align certain text to the center of the screen*/
+            .center {
+                text-align: center;
+                vertical-align: middle;
+        }
+        /*testing-dropdown is the row of dropdowns*/
+            .dropdown {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+        }
+        /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+            .footer{
+                margin-top: 20px;
+                text-align: center;
+        }
+        
+        /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+
+            .sociallinks {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+        }
+
+            .no-wrap {
+                white-space: nowrap;
+        }
+
+            .spotify {
+                margin-left: 215px;
+        }
+            .apple {
+                margin-left: 215px;
+        }
+
+        .custom-link {
+            text-decoration: none; /* Removes underline */
+            color: inherit; /* Uses the default text color */
+            font-weight: bold; /* Makes it stand out */
+            cursor: pointer; /* Keeps it clickable */
+        }
+
+          .centerno-wrap {
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+    }
+        .amazon {
+            margin-left: 215px;
+    }
+        .sound {
+            margin-left: 215px;
+    }
+
+    .pandora {
+        margin-left: 215px;
+}
+    .youtube {
+        margin-left: 215px;
+}
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.top1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.top2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 153px;
+box-sizing: border-box;
+}
+
+.top3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 288px;
+box-sizing: border-box;
+}
+
+.top4 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 567px;
+box-sizing: border-box;
+}
+
+.top5 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 736px;
+box-sizing: border-box;
+}
+
+.top6 {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    }
+
+    .top7 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 962px;
+        box-sizing: border-box;
+        }
+
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+    
+    .custom-link_secondary {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+    nav a {
+        display: inline-block; /* Makes the background wrap around text */
+        background-color: rgba(170, 0, 255, 0.2); /* Black with transparency */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Space inside the box */
+        border-radius: 5px; /* Rounded edges */
+        text-decoration: none; /* Removes underline */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+ nav a:hover {
+        background-color: rgba(136, 0, 255, 0.7); /* Red hover effect */
+    }
+
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Adjust spacing between images */
+    }
+    .image-container img {
+        max-width: 100%; /* Adjust width as needed */
+        height: auto;
+    }
+
