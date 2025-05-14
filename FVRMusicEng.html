@@ -53,6 +53,43 @@
     </div>
 </div>
 
+<body>
+    <h1>Email FVR Music Now</h1>
+
+    <form action="send_email.php" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+    $to = "fvrmusic72@gmail.com"; // Your email
+    $subject = "Message from FVR Music Website";
+    $body = "Name: $name\nEmail: $email\nMessage:\n$message";
+
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Thank you for your message! We'll get back to you soon.";
+    } else {
+        echo "Sorry, there was an error sending your message.";
+    }
+}
+?>
+
 <footer>
     <p class = "center" style="font-size: 30px; color: #FF1493;"><a href = "index.html" class="custom-link">Back</a></p>
     <p class="right" style="color: #FF1493;">&copy; FVRMusic</p>
