@@ -1,23 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-    $to = "fvrmusic72@gmail.com"; // Your email
-    $subject = "Message from FVR Music Website";
-    $body = "Name: $name\nEmail: $email\nMessage:\n$message";
-
-    $headers = "From: $email";
-
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your message! We'll get back to you soon.";
-    } else {
-        echo "Sorry, there was an error sending your message.";
-    }
-}
-?>
-
 <head>
     <link rel="stylesheet" href="fvrmusicengstyle.css">
 </head>
@@ -74,9 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <body>
-    <h1>Email FVR Music Now</h1>
+    <h1>Email Fvr Music Now</h1>
 
-    <form action="index.php" method="POST">
+    <form action="mailto:fvrmusic72@gmail.com" method="post" enctype="text/plain">
         <label for="name">Your Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -84,11 +64,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" id="email" name="email" required><br><br>
 
         <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">Send Email</button>
     </form>
-</body>
+    </body>
 
 <footer>
     <p class = "center" style="font-size: 30px; color: #FF1493;"><a href = "index.html" class="custom-link">Back</a></p>
