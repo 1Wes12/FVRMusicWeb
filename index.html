@@ -40,8 +40,34 @@
 <b>
     <h1 class="center"><p style="font-size: 80px; color: #FF007F;">Welcome To FVR Music!</p>
 </b>
-    <p class="center"><input type="text" placeholder="Search..." />
-    <button>Search</button></p>
+   <p class="center">
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button onclick="searchPages()">Search</button>
+</p>
+    <script>
+  function searchPages() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+
+    const pages = {
+      "home": "index.html",
+      "about": "FVRMusicAb.html",
+      "new releases": "FVRMusicNewRel.html",
+      "contact": "FVRMusicEng.html",
+      "listen": "FVRMusicPlat.html",
+      "creation": "FVRMusicCr.html",
+      "upcoming": "FVRMusicUp.html"
+    };
+
+    for (let keyword in pages) {
+      if (input.includes(keyword)) {
+        window.location.href = pages[keyword];
+        return;
+      }
+    }
+
+    alert("No matching page found.");
+  }
+</script>
     <p><img src = "Content\FVRMusicLogoRevamp.jpg" alt="FVR Music" width="1920" height="300"></p></h1>
 </body>
 
